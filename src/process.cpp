@@ -14,7 +14,7 @@ Process::Process(int pid) : pid_(pid)
 {
     user_ = LinuxParser::User(pid);
     command_ = LinuxParser::Command(pid);
-    uptime_ = LinuxParser::UpTime(pid);
+    uptime_ = (LinuxParser::UpTime() - LinuxParser::UpTime(pid));
     CalculateCPUUtilization();
     procMemUtilization = new ProcMemUtilization(LinuxParser::Ram(pid_));
 }
