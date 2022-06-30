@@ -30,7 +30,7 @@ class System {
   std::vector<Process> processes_ = {};
 
   //Create a pointer to system memory utilization class 
-  SysMemUtilization *memutilization_;
+  SysMemUtilization *memutilization_ = nullptr;
 
   //Adding as member variables as they are part of system class
   long totaljiffies_{0}, activejiffies_{0}, idlejiffies{0}; 

@@ -8,7 +8,7 @@ class ProcMemUtilization : MemUtilization
 {
 	public:
     ProcMemUtilization(long size);
-
+    
     //Overriding pure virtual function of base class
     float MemoryUtilization() const override;
 

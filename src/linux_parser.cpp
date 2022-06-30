@@ -80,13 +80,20 @@ SysMemUtilization LinuxParser::MemoryUtilization() {
       std::replace(line.begin(), line.end(), ':', ' ');
       std::istringstream linestream(line);
       while (linestream >> memoryinfo >> memory >> memoryunit) {
-        if (memoryinfo == "MemTotal") memtotal = std::stol(memory); 
-        if (memoryinfo == "MemFree") memfree = std::stol(memory); 
-        if (memoryinfo == "MemAvailable") memavailable = std::stol(memory); 
-        if (memoryinfo == "Buffers") buffers = std::stol(memory); 
-        if (memoryinfo == "Cached") cached = std::stol(memory); 
-        if (memoryinfo == "SReclaimable") sreclaimable = std::stol(memory); 
-        if (memoryinfo == "Shmem") shmem = std::stol(memory);      
+        try
+        {
+          if (memoryinfo == "MemTotal") memtotal = std::stol(memory); 
+          if (memoryinfo == "MemFree") memfree = std::stol(memory); 
+          if (memoryinfo == "MemAvailable") memavailable = std::stol(memory); 
+          if (memoryinfo == "Buffers") buffers = std::stol(memory); 
+          if (memoryinfo == "Cached") cached = std::stol(memory); 
+          if (memoryinfo == "SReclaimable") sreclaimable = std::stol(memory); 
+          if (memoryinfo == "Shmem") shmem = std::stol(memory); 
+        }
+        catch(const std::exception& e)
+        {
+          std::cerr << e.what() << '\n';
+        }
       }
     }
   }
@@ -95,7 +102,7 @@ SysMemUtilization LinuxParser::MemoryUtilization() {
   }
 
 //Read and return the system uptime
-long LinuxParser::UpTime() { 
+long long LinuxParser::UpTime() { 
   string uptime, idleprocesstime;
   string line;
   std::ifstream stream(kProcDirectory + kUptimeFilename);
@@ -104,7 +111,19 @@ long LinuxParser::UpTime() {
     std::istringstream linestream(line);
     linestream >> uptime >> idleprocesstime;
   }
-  return std::stol(uptime);
+
+  long long Uptime = 0;
+  try
+  {
+    Uptime = std::stoll(uptime);
+  }
+  catch(const std::exception& e)
+  {
+    Uptime = 0;
+    //std::cerr << e.what() << '\n';
+  }
+  
+  return Uptime;
 }
 
 //Read and return the number of jiffies for the system
@@ -135,8 +154,15 @@ long LinuxParser::ActiveJiffies() {
 
   long activejiffies = 0;
   for(auto cpuattribute : cpuattributes)
-    activejiffies += std::stol(cpuattribute);
-
+    try
+    {
+      activejiffies += std::stol(cpuattribute);
+    }
+    catch(const std::exception& e)
+    {
+      //std::cerr << e.what() << '\n';
+    }
+  
   return activejiffies; 
 }
 
@@ -229,9 +255,10 @@ string LinuxParser::Command(int pid) {
 }  
  
 //Read and return the memory used by a process
-string LinuxParser::Ram(int pid) { 
+long LinuxParser::Ram(int pid) { 
   string line;
   string key, ramsize;
+  long Ramsize = 0;
   std::ifstream filestream(kProcDirectory +std::to_string(pid)+ kStatusFilename);
   if (filestream.is_open()) {
     while (std::getline(filestream, line)) {
@@ -239,12 +266,21 @@ string LinuxParser::Ram(int pid) {
       std::istringstream linestream(line);
       while (linestream >> key >> ramsize) {
         if (key == "VmSize") 
-          return ramsize;
+          try
+          {
+            Ramsize = std::stol(ramsize);
+            return Ramsize;
+          }
+          catch(const std::exception& e)
+          {
+            Ramsize = 0;
+            //std::cerr << e.what() << '\n';
+          }
       }
     }
   }
   //Return empty string in case VmSize is not found
-  return string(); 
+  return Ramsize; 
 }
 
 //Read and return the user ID associated with a process
@@ -286,12 +322,12 @@ string LinuxParser::User(int pid) {
 }
 
 //Read and return the uptime of a process
-long LinuxParser::UpTime(int pid) { 
+long long LinuxParser::UpTime(int pid) { 
   auto processAttributes = LinuxParser::ProcessCpuUtilization(pid);
-  long uptime = 0;
+  long long uptime = 0;
   try
   {
-    uptime = std::stol(processAttributes.at(21));
+    uptime = std::stoll(processAttributes.at(21));
   }
   catch(const std::exception& e)
   {

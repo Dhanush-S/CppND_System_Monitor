@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/workspace/CppND-System-Monitor/src/format.cpp" "/home/workspace/CppND-System-Monitor/build/CMakeFiles/monitor.dir/src/format.cpp.o"
-  "/home/workspace/CppND-System-Monitor/src/linux_parser.cpp" "/home/workspace/CppND-System-Monitor/build/CMakeFiles/monitor.dir/src/linux_parser.cpp.o"
-  "/home/workspace/CppND-System-Monitor/src/main.cpp" "/home/workspace/CppND-System-Monitor/build/CMakeFiles/monitor.dir/src/main.cpp.o"
-  "/home/workspace/CppND-System-Monitor/src/ncurses_display.cpp" "/home/workspace/CppND-System-Monitor/build/CMakeFiles/monitor.dir/src/ncurses_display.cpp.o"
-  "/home/workspace/CppND-System-Monitor/src/process.cpp" "/home/workspace/CppND-System-Monitor/build/CMakeFiles/monitor.dir/src/process.cpp.o"
-  "/home/workspace/CppND-System-Monitor/src/processor.cpp" "/home/workspace/CppND-System-Monitor/build/CMakeFiles/monitor.dir/src/processor.cpp.o"
-  "/home/workspace/CppND-System-Monitor/src/procmemutilization.cpp" "/home/workspace/CppND-System-Monitor/build/CMakeFiles/monitor.dir/src/procmemutilization.cpp.o"
-  "/home/workspace/CppND-System-Monitor/src/sysmemutilization.cpp" "/home/workspace/CppND-System-Monitor/build/CMakeFiles/monitor.dir/src/sysmemutilization.cpp.o"
-  "/home/workspace/CppND-System-Monitor/src/system.cpp" "/home/workspace/CppND-System-Monitor/build/CMakeFiles/monitor.dir/src/system.cpp.o"
+  "/home/workspace/SystemMonitor/src/format.cpp" "/home/workspace/SystemMonitor/build/CMakeFiles/monitor.dir/src/format.cpp.o"
+  "/home/workspace/SystemMonitor/src/linux_parser.cpp" "/home/workspace/SystemMonitor/build/CMakeFiles/monitor.dir/src/linux_parser.cpp.o"
+  "/home/workspace/SystemMonitor/src/main.cpp" "/home/workspace/SystemMonitor/build/CMakeFiles/monitor.dir/src/main.cpp.o"
+  "/home/workspace/SystemMonitor/src/ncurses_display.cpp" "/home/workspace/SystemMonitor/build/CMakeFiles/monitor.dir/src/ncurses_display.cpp.o"
+  "/home/workspace/SystemMonitor/src/process.cpp" "/home/workspace/SystemMonitor/build/CMakeFiles/monitor.dir/src/process.cpp.o"
+  "/home/workspace/SystemMonitor/src/processor.cpp" "/home/workspace/SystemMonitor/build/CMakeFiles/monitor.dir/src/processor.cpp.o"
+  "/home/workspace/SystemMonitor/src/procmemutilization.cpp" "/home/workspace/SystemMonitor/build/CMakeFiles/monitor.dir/src/procmemutilization.cpp.o"
+  "/home/workspace/SystemMonitor/src/sysmemutilization.cpp" "/home/workspace/SystemMonitor/build/CMakeFiles/monitor.dir/src/sysmemutilization.cpp.o"
+  "/home/workspace/SystemMonitor/src/system.cpp" "/home/workspace/SystemMonitor/build/CMakeFiles/monitor.dir/src/system.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

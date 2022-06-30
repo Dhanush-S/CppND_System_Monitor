@@ -3,13 +3,13 @@
 
 CMakeFiles/monitor.dir/src/format.cpp.o
  ../include/format.h
- /home/workspace/CppND-System-Monitor/src/format.cpp
+ /home/workspace/SystemMonitor/src/format.cpp
 CMakeFiles/monitor.dir/src/linux_parser.cpp.o
  ../include/format.h
  ../include/linux_parser.h
  ../include/memutilization.h
  ../include/sysmemutilization.h
- /home/workspace/CppND-System-Monitor/src/linux_parser.cpp
+ /home/workspace/SystemMonitor/src/linux_parser.cpp
 CMakeFiles/monitor.dir/src/main.cpp.o
  ../include/format.h
  ../include/linux_parser.h
@@ -20,7 +20,7 @@ CMakeFiles/monitor.dir/src/main.cpp.o
  ../include/procmemutilization.h
  ../include/sysmemutilization.h
  ../include/system.h
- /home/workspace/CppND-System-Monitor/src/main.cpp
+ /home/workspace/SystemMonitor/src/main.cpp
 CMakeFiles/monitor.dir/src/ncurses_display.cpp.o
  ../include/format.h
  ../include/linux_parser.h
@@ -31,7 +31,7 @@ CMakeFiles/monitor.dir/src/ncurses_display.cpp.o
  ../include/procmemutilization.h
  ../include/sysmemutilization.h
  ../include/system.h
- /home/workspace/CppND-System-Monitor/src/ncurses_display.cpp
+ /home/workspace/SystemMonitor/src/ncurses_display.cpp
 CMakeFiles/monitor.dir/src/process.cpp.o
  ../include/format.h
  ../include/linux_parser.h
@@ -39,23 +39,23 @@ CMakeFiles/monitor.dir/src/process.cpp.o
  ../include/process.h
  ../include/procmemutilization.h
  ../include/sysmemutilization.h
- /home/workspace/CppND-System-Monitor/src/process.cpp
+ /home/workspace/SystemMonitor/src/process.cpp
 CMakeFiles/monitor.dir/src/processor.cpp.o
  ../include/linux_parser.h
  ../include/memutilization.h
  ../include/processor.h
  ../include/sysmemutilization.h
- /home/workspace/CppND-System-Monitor/src/processor.cpp
+ /home/workspace/SystemMonitor/src/processor.cpp
 CMakeFiles/monitor.dir/src/procmemutilization.cpp.o
  ../include/linux_parser.h
  ../include/memutilization.h
  ../include/procmemutilization.h
  ../include/sysmemutilization.h
- /home/workspace/CppND-System-Monitor/src/procmemutilization.cpp
+ /home/workspace/SystemMonitor/src/procmemutilization.cpp
 CMakeFiles/monitor.dir/src/sysmemutilization.cpp.o
  ../include/memutilization.h
  ../include/sysmemutilization.h
- /home/workspace/CppND-System-Monitor/src/sysmemutilization.cpp
+ /home/workspace/SystemMonitor/src/sysmemutilization.cpp
 CMakeFiles/monitor.dir/src/system.cpp.o
  ../include/format.h
  ../include/linux_parser.h
@@ -65,4 +65,4 @@ CMakeFiles/monitor.dir/src/system.cpp.o
  ../include/procmemutilization.h
  ../include/sysmemutilization.h
  ../include/system.h
- /home/workspace/CppND-System-Monitor/src/system.cpp
+ /home/workspace/SystemMonitor/src/system.cpp

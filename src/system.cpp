@@ -70,6 +70,6 @@ long int System::UpTime() { return LinuxParser::UpTime(); }
 
 long System::TotalJiffies() {return LinuxParser::Jiffies();}
 
-long System::ActiveJiffies() {return LinuxParser::ActiveJiffies();};
+long System::ActiveJiffies() {return LinuxParser::ActiveJiffies();}
 
-long System::IdleJiffies() {return LinuxParser::IdleJiffies();};
+long System::IdleJiffies() {return LinuxParser::IdleJiffies();}

@@ -68,13 +68,13 @@ linux_parser.h
 sysmemutilization.h
 ../include/sysmemutilization.h
 
-/home/workspace/CppND-System-Monitor/src/format.cpp
+/home/workspace/SystemMonitor/src/format.cpp
 string
 -
 format.h
-/home/workspace/CppND-System-Monitor/src/format.h
+/home/workspace/SystemMonitor/src/format.h
 
-/home/workspace/CppND-System-Monitor/src/linux_parser.cpp
+/home/workspace/SystemMonitor/src/linux_parser.cpp
 dirent.h
 -
 unistd.h
@@ -86,21 +86,21 @@ string
 vector
 -
 linux_parser.h
-/home/workspace/CppND-System-Monitor/src/linux_parser.h
+/home/workspace/SystemMonitor/src/linux_parser.h
 format.h
-/home/workspace/CppND-System-Monitor/src/format.h
+/home/workspace/SystemMonitor/src/format.h
 
-/home/workspace/CppND-System-Monitor/src/main.cpp
+/home/workspace/SystemMonitor/src/main.cpp
 ncurses_display.h
-/home/workspace/CppND-System-Monitor/src/ncurses_display.h
+/home/workspace/SystemMonitor/src/ncurses_display.h
 system.h
-/home/workspace/CppND-System-Monitor/src/system.h
+/home/workspace/SystemMonitor/src/system.h
 format.h
-/home/workspace/CppND-System-Monitor/src/format.h
+/home/workspace/SystemMonitor/src/format.h
 iostream
-/home/workspace/CppND-System-Monitor/src/iostream
+/home/workspace/SystemMonitor/src/iostream
 
-/home/workspace/CppND-System-Monitor/src/ncurses_display.cpp
+/home/workspace/SystemMonitor/src/ncurses_display.cpp
 curses.h
 -
 chrono
@@ -112,13 +112,13 @@ thread
 vector
 -
 format.h
-/home/workspace/CppND-System-Monitor/src/format.h
+/home/workspace/SystemMonitor/src/format.h
 ncurses_display.h
-/home/workspace/CppND-System-Monitor/src/ncurses_display.h
+/home/workspace/SystemMonitor/src/ncurses_display.h
 system.h
-/home/workspace/CppND-System-Monitor/src/system.h
+/home/workspace/SystemMonitor/src/system.h
 
-/home/workspace/CppND-System-Monitor/src/process.cpp
+/home/workspace/SystemMonitor/src/process.cpp
 unistd.h
 -
 cctype
@@ -130,21 +130,21 @@ string
 vector
 -
 process.h
-/home/workspace/CppND-System-Monitor/src/process.h
+/home/workspace/SystemMonitor/src/process.h
 
-/home/workspace/CppND-System-Monitor/src/processor.cpp
+/home/workspace/SystemMonitor/src/processor.cpp
 processor.h
-/home/workspace/CppND-System-Monitor/src/processor.h
+/home/workspace/SystemMonitor/src/processor.h
 
-/home/workspace/CppND-System-Monitor/src/procmemutilization.cpp
+/home/workspace/SystemMonitor/src/procmemutilization.cpp
 procmemutilization.h
-/home/workspace/CppND-System-Monitor/src/procmemutilization.h
+/home/workspace/SystemMonitor/src/procmemutilization.h
 
-/home/workspace/CppND-System-Monitor/src/sysmemutilization.cpp
+/home/workspace/SystemMonitor/src/sysmemutilization.cpp
 sysmemutilization.h
-/home/workspace/CppND-System-Monitor/src/sysmemutilization.h
+/home/workspace/SystemMonitor/src/sysmemutilization.h
 
-/home/workspace/CppND-System-Monitor/src/system.cpp
+/home/workspace/SystemMonitor/src/system.cpp
 unistd.h
 -
 cstddef
@@ -156,9 +156,9 @@ string
 vector
 -
 process.h
-/home/workspace/CppND-System-Monitor/src/process.h
+/home/workspace/SystemMonitor/src/process.h
 processor.h
-/home/workspace/CppND-System-Monitor/src/processor.h
+/home/workspace/SystemMonitor/src/processor.h
 system.h
-/home/workspace/CppND-System-Monitor/src/system.h
+/home/workspace/SystemMonitor/src/system.h
 
