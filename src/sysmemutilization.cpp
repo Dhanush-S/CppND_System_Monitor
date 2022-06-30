@@ -19,7 +19,11 @@
     float noncachemem = totalmemused - (buffers_ + cachedmem);
 
     //Return percentage of actual mem used against total mem available
-    return ((noncachemem) / memtotal_);
+    float percentage = 0;
+    if(memtotal_ != 0)
+      percentage = (noncachemem) / memtotal_;
+      
+    return percentage;
  }
 
  //Mutators
